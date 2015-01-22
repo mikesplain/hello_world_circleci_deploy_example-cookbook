@@ -4,39 +4,17 @@ A sample cookbook to test circleci docker / test kitchen tests and deployment wi
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
-
-## Attributes
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['hello_world_circleci_deploy_example']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+- name: ubuntu-12.04
+- name: centos-6.4
 
 ## Usage
 
-### hello_world_circleci_deploy_example::default
+This cookbook shows a simple way to develop cookbooks using Circle CI to automate your life (or at least your Chef code).
 
-Include `hello_world_circleci_deploy_example` in your node's `run_list`:
+Circle CI allows acces to a Docker container while running tests, which means [Kitchen Docker](https://github.com/portertech/kitchen-docker) is a perfect candidate!
 
-```json
-{
-  "run_list": [
-    "recipe[hello_world_circleci_deploy_example::default]"
-  ]
-}
-```
+Once standard test kitchen tests complete, deploying with [Stove](https://github.com/sethvargo/stove).
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Mike Splain (<mike.splain@gmail.com>)
