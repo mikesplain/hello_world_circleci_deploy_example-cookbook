@@ -27,4 +27,4 @@ deployment:
       - gem install stove
       - stove login --username mikesplain --key ~/.ssh/id_chef
       - git config --global user.email "mike.splain@gmail.com" && git config --global user.name "Mike Splain"
-      - stove
+      - { git diff @~1 metadata.rb | grep +version; } || stove
