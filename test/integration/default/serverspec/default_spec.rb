@@ -2,9 +2,9 @@ require 'serverspec'
 
 case os[:family]
 when /ubuntu/
-  package = "apache2"
+  package = 'apache2'
 when /redhat/
-  package = "httpd"
+  package = 'httpd'
 end
 
 describe package(package) do
