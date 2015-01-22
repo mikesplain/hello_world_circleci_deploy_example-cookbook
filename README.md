@@ -1,6 +1,6 @@
 # hello_world_circleci_deploy_example-cookbook
 
-TODO: Enter the cookbook description here.
+A sample cookbook to test circleci docker / test kitchen tests and deployment with stove.
 
 ## Supported Platforms
 
